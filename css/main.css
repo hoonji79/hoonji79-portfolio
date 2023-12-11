@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* 여기 추가 */
+}
+
+.header {
+  background-color: #333333;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 180px; /* 좌우 여백 180px */
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+.header-content {
+  text-align: center;
+  margin-top: 100px; /* navigation 아래로 내리기 */
+}
+
+.main-title {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.sub-title {
+  font-size: 14px;
+  color: white;
+  margin-top: 30px;
+}
+
+.body {
+  margin: 0 180px; /* 좌우 여백 180px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+
+
+
+.profile-image img {
+  width: 120px; /* 변경된 이미지 너비 */
+  height: 120px; /* 변경된 이미지 높이 */
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.about-me {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin: 50px;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.info-label {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.info-value {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+
+.skills {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.skills p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+/* 기존 CSS 코드 유지 */
+
+.skill-section {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.skill-image {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.skill-image img {
+  width: 120px; /* 변경된 이미지 너비 */
+  height: 120px; /* 변경된 이미지 높이 */
+  object-fit: cover; /* 이미지 비율 유지 */
+}
+
+
+
+
+
+/* 기존 CSS 코드 유지 */
+
+/* 기존 CSS 코드 유지 */
+
+.projects {
+  text-align: center;
+}
+
+.project-section {
+  display: flex;
+  
+  align-items: center;
+  margin: 20px;
+  font-size: 15px;
+}
+
+.project-info {
+  text-align: left;
+  width: 50%;
+}
+
+.project-info h3,
+.project-info p {
+  margin: 0;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tech-stack p {
+  background-color: #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.project-image {
+  width: 200px;
+  height: 200px;
+  background-color: #ddd; /* 임시 색상 */
+  border-radius: 10px;
+}
+
+
+.career {
+  text-align: center;
+  margin-top: 20px;
+  height: 500px;
+}
+
+.career h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.career p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #333333;
+  width: 1920px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  color: white;
+  font-size: 14px;
+}
