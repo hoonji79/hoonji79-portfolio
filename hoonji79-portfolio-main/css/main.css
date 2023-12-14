@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* 여기 추가 */
+}
+
+.header {
+  background-color: #333333;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 180px; /* 좌우 여백 180px */
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+
+.active,
+.nav-item:hover {
+    cursor: pointer; /* 마우스를 올렸을 때 손가락 커서로 변경 */
+    color: blue; /* 선택한 네비게이션 항목 또는 마우스를 올렸을 때 파란색 색상 적용 */
+}
+
+.nav-item:active {
+    position: relative;
+}
+
+.nav-item:active::after {
+    content: '\2022'; /* 클릭 아이콘(검은색 원) */
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    font-size: 20px;
+    color: black;
+    transform: translateY(-50%);
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+.header-content {
+  text-align: center;
+  margin-top: 100px; /* navigation 아래로 내리기 */
+}
+
+.main-title {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 5px;
+
+}
+
+.sub-title {
+  font-size: 14px;
+  color: white;
+  margin-top: 30px;
+}
+
+.body {
+  margin: 0 180px; /* 좌우 여백 180px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+
+
+
+.profile-image img {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.about-me {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin: 50px;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.info-label {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.info-value {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+
+.skills {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.skills h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.skills p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+.skill-section {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.skill-image {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.skill-image img {
+  width: 120px; /* 변경된 이미지 너비 */
+  height: 120px; /* 변경된 이미지 높이 */
+  object-fit: cover; /* 이미지 비율 유지 */
+}
+
+
+
+
+
+
+.projects {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.project-section {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  margin-top: 100px;
+  font-size: 15px;
+  width: 700px;
+}
+
+.project-info {
+  text-align: left;
+  width: 50%;
+}
+
+.project-info h3,
+.project-info p {
+  margin: 0;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tech-stack p {
+  background-color: #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.project-image {
+  width: 200px;
+  height: 200px;
+  background-color: #ddd; /* 임시 색상 */
+  border-radius: 10px;
+  margin-right: 50px;
+}
+
+
+.career {
+  text-align: center;
+  margin-top: 20px;
+  height: 500px;
+  margin-top: 200px;
+}
+
+.career h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.career p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #333333;
+  width: 1920px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  color: white;
+  font-size: 14px;
+}
+
+/*  리모컨 기능  */
+
+.scroll-remote {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.scroll-button {
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  border: 1px solid #888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
